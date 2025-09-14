@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Cicret Bracelet - Зворотній зв’язок</title>
+    </head>
+    <body>
+        <hr>
+        <h1>Зворотній зв’язок</h1>
+        <form>
+            <fieldset>
+                <legend>Персональна інформація</legend>
+                <p>
+                    <label for="fullname">Прізвище та ім’я:*</label><br>
+                    <input type="text" id="fullname" name="fullname" required>
+                </p>
+                <p>
+                    <label for="email">E-mail:*</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="age">Вік:*</label><br>
+                    <input type="number" id="age" name="age" min="10" max="100" required>
+                </p>
+                <p>
+                    <label for="education">Освіта:*</label><br>
+                    <select name="education" id="education" required>
+                        <option>Повна</option>
+                        <option>Неповна</option>
+                        <option>Вища</option>
+                        <option>Професійна</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Інтереси:*</label><br>
+                    <input type="checkbox" name="interest" id="scientist" value="scientist">
+                    <label for="scientist">Науковець</label><br>
+
+                    <input type="checkbox" name="interest" id="investor" value="investor">
+                    <label for="investor">Інвестор</label><br>
+
+                    <input type="checkbox" name="interest" id="promoter" value="promoter">
+                    <label for="promoter">Промоутер</label><br>
+
+                    <input type="checkbox" name="interest" id="government" value="government">
+                    <label for="government">Держслужбовець</label>
+                </p>
+            </fieldset>
+            <p>
+                <label for="purpose">Мета зворотнього зв’язку:</label><br>
+                <select name="purpose" id="purpose">
+                    <option>Співпраця</option>
+                    <option>Скарга на порушення права власності</option>
+                    <option>Пропозиція</option>
+                    <option>Наявність помилки</option>
+                </select>
+            </p>
+            <p>
+                <label for="detail">Детально:</label><br>
+                <textarea name="details" id="detail" cols="50" rows="5" maxlength="300"></textarea>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" name="consent" required>
+                    Даю згоду на обробку моїх персональних даних
+                </label>
+            </p>
+            <button type="reset"><b>Очистити</b></button>
+            <button type="submit"><b>Відправити</b></button>
+        </form>
+        <p>
+            <a href="index.html">Повернутись на головну</a>
+        </p>
+        <hr>
+    </body>
+</html>

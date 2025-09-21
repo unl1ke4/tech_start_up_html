@@ -1,0 +1,101 @@
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background-color: #0d1117;
+    color: #e6edf3;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #161b22;
+    padding: 20px 0;
+    border-bottom: 2px solid #1f6feb;
+}
+
+img {
+    object-fit: cover;
+    width: 300px;
+    border-radius: 15%;
+}
+
+.style_for_block {
+    margin: 0;
+    padding: 20px;
+    background: #1c2128;
+    border: 1px solid #30363d;
+}
+
+#mission::after {
+    content: "\1F4BB \1F4C1";
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+#founders {
+    margin: 20px auto;
+    border: 1px solid #30363d;
+    border-collapse: collapse;
+    transition: transform 0.3s ease;
+}
+#founders:focus {
+    transform: translateX(2%);
+}
+#founders th, #founders td {
+    border: 1px solid #30363d;
+    padding: 8px 12px;
+}
+
+.buttons {
+    display: block;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px;
+}
+
+.buttons button {
+    background: linear-gradient(90deg, #1f6feb, #4655F2);
+    color: #ffffff; /* колір тексту */
+    font-weight: bold;
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 5px auto;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover ефект */
+main button:hover {
+    background: linear-gradient(90deg, #4655F2, #1f6feb);
+    transform: scale(1.02);
+    box-shadow: 0 0 10px #1f6feb, 0 0 20px #4655F2;
+}
+
+main button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 5px #1f6feb, 0 0 10px #4655F2;
+}
+
+/* Hover is used because animation is not supported for selection  */
+#contacts:hover {
+    animation: hover_anim 1s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes hover_anim {
+    0% {
+        background-color: #1f6feb;
+        color: #ffffff;
+    }
+    100% {
+        background-color: #4655F2;
+        color: #000000;
+    }
+}
+
+footer > p {
+    text-align: center;
+}

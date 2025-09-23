@@ -6,16 +6,27 @@ body {
     padding: 0;
 }
 
-header {
+/* Set header for index.html */
+.header_for_index {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 110px;
     text-align: center;
     background-color: #161b22;
-    padding: 10px 0;
     border-bottom: 2px solid #1f6feb;
 }
 
+.logo_container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+
 img {
-    object-fit: cover;
-    width: 300px;
+    width: 100px;
     border-radius: 15%;
 }
 
@@ -26,7 +37,7 @@ img {
     border: 1px solid #30363d;
 }
 
-.nav-container {
+.nav_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,6 +98,7 @@ img {
     justify-content: center;
     gap: 5px;
     margin: 10px;
+    z-index: 1;
 }
 
 .buttons button {

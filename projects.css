@@ -1,9 +1,12 @@
 .header_class {
-    position: sticky;
-    width: 100%;
-    text-align: center;
+    align-items: center;
     background-color: #161b22;
     border-bottom: 2px solid #1f6feb;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: sticky;
+    width: 100%;
 }
 
 .projects_img {
@@ -12,11 +15,17 @@
     border-radius: 15%;
 }
 
+.projects_logo_container {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    gap: 15px;
+}
+
 .style_for_block {
     background-color: #0f1a2b;
     border: 2px solid #1f3b6f;
     border-bottom-style: double;
-    margin-top: 100px;
 }
 
 .style_for_block h3 {
@@ -31,8 +40,4 @@
 }
 .style_for_block img:hover {
     filter: grayscale(100%);
-}
-
-.links li a:link {
-    color: #FF8C00;
 }

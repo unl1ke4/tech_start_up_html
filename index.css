@@ -93,6 +93,10 @@ img {
     width: 100%;
 }
 
+.links li a:link {
+    color: #FF8C00;
+}
+
 .buttons {
     display: block;
     justify-content: center;

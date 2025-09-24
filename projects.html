@@ -3,20 +3,34 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="projects.css">
         <title>The Cicret Bracelet - Проєкти</title>
     </head>
     <body>
-        <header>
-            <h1>The Cicret Bracelet</h1>
-            <img src="https://pbs.twimg.com/profile_images/731508167696322560/-nScDr9T_400x400.jpg"
-                 alt="Логотип стартапу" width="200">
+        <header class="header_class">
+            <nav class="nav_container">
+                <ul class="links">
+                    <li><a href="index.html">Повернутись на головну</a></li>
+                </ul>
+            </nav>
+
+            <div class="projects_logo_container">
+                <h1>The Cicret Bracelet</h1>
+                <img src="https://pbs.twimg.com/profile_images/731508167696322560/-nScDr9T_400x400.jpg"
+                     alt="Логотип стартапу">
+            </div>
+
+            <div class="buttons">
+                <button>Перейти у власний кабінет</button>
+                <button>Зареєструватись</button>
+            </div>
         </header>
         <main>
-            <h2>Наші проєкти</h2>
-            <a href="index.html">Повернутись на головну</a>
-            <article>
+            <article class="style_for_block">
+                <h2 id="projects_line">Наші проєкти</h2>
                 <h3>SenseGlove</h3>
-                <img src="https://pronetkrakow.com.pl/img/m/66.jpg" alt="Проєкт 1" width="200">
+                <img src="https://pronetkrakow.com.pl/img/m/66.jpg" alt="Проєкт 1" class="projects_img">
                 <p>Країна: Нідерланди</p>
                 <p>Розробка haptic рукавички для віртуальної реальності,
                     які дають відчуття торкання, спротиву, твердості об’єктів тощо.</p>
@@ -28,9 +42,10 @@
                     <li>Різні сфери застосування</li>
                 </ul>
             </article>
-            <article>
+            <article class="style_for_block">
                 <h3>Pulsetto</h3>
-                <img src="https://media.wired.com/photos/6439a80f908d8cae8a036fe4/master/w_1600%2Cc_limit/Pulsetto-Review-App-Gear.jpg" alt="Проєкт 2" width="200">
+                <img src="https://media.wired.com/photos/6439a80f908d8cae8a036fe4/master/w_1600%2Cc_limit/Pulsetto-Review-App-Gear.jpg"
+                     alt="Проєкт 2" class="projects_img">
                 <p>Країна: Нідерланди</p>
                 <p>Wearable пристрій для неінвазивної стимуляції блукаючого нерва (vagus nerve),
                     орієнтований на wellness: зменшення стресу, поліпшення сну, релаксацію.</p>
